@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function App() {
+  const [persons, setPersons] = useState([]);
   return (
     <div className="App">
 
