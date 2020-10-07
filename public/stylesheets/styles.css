@@ -1,0 +1,19 @@
+body {
+    background: blueviolet;
+}
+
+#root {
+    background: coral;
+}
+
+header {
+    background: azure;
+}
+
+main {
+    background: antiquewhite;
+}
+
+footer {
+    background: aquamarine;
+}

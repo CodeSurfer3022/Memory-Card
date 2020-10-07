@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
+import Header from "./Components/Header";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
 
 function App() {
-  const [persons, setPersons] = useState([]);
   return (
     <div className="App">
-
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
