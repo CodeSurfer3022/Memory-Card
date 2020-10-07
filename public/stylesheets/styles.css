@@ -17,3 +17,16 @@ main {
 footer {
     background: aquamarine;
 }
+
+/* style card */
+.card {
+    height: 300px;
+    /*width: 300px;*/
+    background: azure;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
