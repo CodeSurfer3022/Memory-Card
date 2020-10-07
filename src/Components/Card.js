@@ -2,7 +2,7 @@ import React from "react";
 
 function Card(props) {
     return(
-        <div className="card">
+        <div className="card" onClick={() => props.handleClick(props.pokemon.id)}>
             <div className="image">
                 <img src="#" alt="poke" />
             </div>
