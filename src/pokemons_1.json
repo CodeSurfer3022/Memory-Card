@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "clicked": false,
+    "name": "alolan Ninetales",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "clicked": false,
+    "name": "Blastoise",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "clicked": false,
+    "name": "lugia",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "clicked": false,
+    "name": "luxray",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "clicked": false,
+    "name": "mewtwo",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "clicked": false,
+    "name": "milotic",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "clicked": false,
+    "name": "umbreon",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "clicked": false,
+    "name": "dragonite",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "clicked": false,
+    "name": "lapras",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "clicked": false,
+    "name": "Articuno",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "clicked": false,
+    "name": "Ampharos",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "clicked": false,
+    "name": "girafirag",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "clicked": false,
+    "name": "shuckle",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "clicked": false,
+    "name": "teddiursa",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "clicked": false,
+    "name": "houndoom",
+    "image": ""
+  },
+  {
+    "id": 14,
+    "clicked": false,
+    "name": "phanpy",
+    "image": ""
+  },
+  {
+    "id": 15,
+    "clicked": false,
+    "name": "ho-oh",
+    "image": ""
+  },
+  {
+    "id": 16,
+    "clicked": false,
+    "name": "swampert",
+    "image": ""
+  },
+  {
+    "id": 17,
+    "clicked": false,
+    "name": "luxray",
+    "image": ""
+  },
+  {
+    "id": 18,
+    "clicked": false,
+    "name": "Beautifly",
+    "image": ""
+  },
+  {
+    "id": 19,
+    "clicked": false,
+    "name": "Aron",
+    "image": ""
+  },
+  {
+    "id": 20,
+    "clicked": false,
+    "name": "Aggron",
+    "image": ""
+  }
+]
