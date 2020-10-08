@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Header(props) {
     return(
         <header>
             Pokemon memory game
@@ -10,6 +10,8 @@ function Header() {
                     Click each card only once, clicking the same card twice will
                     reset score to 0
                 </p>
+                <p>Score is {props.score}</p>
+                <p>Top Score is {props.topScore}</p>
             </div>
         </header>
     )
