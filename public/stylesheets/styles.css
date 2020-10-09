@@ -1,0 +1,45 @@
+body {
+    background: blueviolet;
+}
+
+#root {
+    background: coral;
+}
+
+header {
+    background: azure;
+}
+
+main {
+    background: antiquewhite;
+}
+
+footer {
+    background: aquamarine;
+}
+
+/* style card */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    height: 300px;
+    /*width: 300px;*/
+    text-align: center;
+    background: #8eecec;
+}
+
+.image {
+    height: 90%;
+    /* add a gradient background*/
+    background: coral;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
