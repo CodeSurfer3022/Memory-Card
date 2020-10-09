@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Card from "./Components/Card";
@@ -11,6 +11,7 @@ import pokemons from './pokemons_1.json'
 function App() {
     const [score, setScore] = useState(0);
     const [topScore, setTopscore] = useState(0);
+    const [pokemonsArray, setPokemonsArray] = useState(pokemons);
 
     const handleIncrement = () => {
         setScore(prevScore => prevScore + 1);
@@ -20,8 +21,28 @@ function App() {
         setTopscore(score > topScore ? score : topScore);
     }
 
+    const shuffleArray = array => {
+        // assign array items from last to first
+        let lastIndex = array.length - 1;
+        let randomIndex, tmp;
+
+        while(lastIndex > 0) {
+            randomIndex = Math.floor(Math.random() * lastIndex);
+
+            tmp  = array[lastIndex];
+            array[lastIndex] = array[randomIndex];
+            array[randomIndex] = tmp;
+
+            lastIndex --;
+        }
+        console.log(array);
+        return array;
+    }
+
     const handleClick = (id) => {
-        pokemons.forEach(pokemon => {
+        // shuffle array on each click
+        setPokemonsArray(shuffleArray(pokemonsArray));
+        pokemonsArray.forEach(pokemon => {
             if(pokemon.id === id) {
                 if(pokemon.clicked) {
                     // if the card was already clicked, you lose!
@@ -30,7 +51,7 @@ function App() {
                     setScore(0);
 
                     // set clicked to false in all cards for new game
-                    pokemons.forEach(pokemon => pokemon.clicked = false);
+                    pokemonsArray.forEach(pokemon => pokemon.clicked = false);
                 } else {
                     pokemon.clicked = true;
                     console.log(`score is ${score}`);
@@ -41,7 +62,7 @@ function App() {
         });
     }
 
-    const pokemonCards = pokemons.map( pokemon =>
+    const pokemonCards = pokemonsArray.map( pokemon =>
         <Card
             key={pokemon.id}
             pokemon={pokemon}
