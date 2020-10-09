@@ -19,14 +19,27 @@ footer {
 }
 
 /* style card */
-.card {
-    height: 300px;
-    /*width: 300px;*/
-    background: azure;
-}
-
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
+
+.card {
+    height: 300px;
+    /*width: 300px;*/
+    text-align: center;
+    background: #8eecec;
+}
+
+.image {
+    height: 90%;
+    /* add a gradient background*/
+    background: coral;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
