@@ -6,7 +6,7 @@ function Card(props) {
             <div className="image">
                 <img src={process.env.PUBLIC_URL + props.pokemon.image} alt={props.pokemon.name} />
             </div>
-            <div className="main">
+            <div className="name">
                 <p>{props.pokemon.name}</p>
             </div>
         </div>

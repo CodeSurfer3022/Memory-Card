@@ -6,8 +6,6 @@ import Footer from "./Components/Footer";
 
 import pokemons from './pokemons_1.json'
 
-
-
 function App() {
     const [score, setScore] = useState(0);
     const [topScore, setTopscore] = useState(0);
@@ -40,8 +38,6 @@ function App() {
     }
 
     const handleClick = (id) => {
-        // shuffle array on each click
-        setPokemonsArray(shuffleArray(pokemonsArray));
         pokemonsArray.forEach(pokemon => {
             if(pokemon.id === id) {
                 if(pokemon.clicked) {
@@ -60,6 +56,8 @@ function App() {
                 console.log(pokemon);
             }
         });
+        // shuffle array on each click
+        setPokemonsArray(shuffleArray(pokemonsArray));
     }
 
     const pokemonCards = pokemonsArray.map( pokemon =>
@@ -69,8 +67,6 @@ function App() {
             handleClick={handleClick}
         />
     );
-
-
 
     return (
         <div className="App">
