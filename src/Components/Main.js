@@ -3,7 +3,9 @@ import React from "react";
 function Main(props) {
     return(
         <main>
-          {props.pokemonCards}
+          <div className="wrapper">
+            {props.pokemonCards}
+          </div>
         </main>
     )
 }

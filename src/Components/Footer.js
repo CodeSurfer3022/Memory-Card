@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
     return(
         <footer>
-            Gotta catch em all!
+          <p>Gotta catch em all!</p>
         </footer>
     )
 }

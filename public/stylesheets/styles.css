@@ -3,15 +3,46 @@ body {
 }
 
 header {
-    background: azure;
+    padding: 20px;
+    position: relative;
+    background: yellow;
+    color: midnightblue;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.score p {
+    margin-top: 10px;
 }
 
 footer {
-    background: aquamarine;
+    height: 100px;
+    overflow: auto;
+    text-align: center;
+    background: yellow;
+    color: midnightblue;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+footer p {
+    margin-top: 20px;
 }
 
 /* style card */
 main {
+    overflow: auto;
+}
+
+.wrapper {
     min-width: 800px;
     margin: 50px;
     display: grid;
@@ -26,7 +57,7 @@ main {
 }
 
 .card:hover {
-    box-shadow: 0 0 50px #ffe703;
+    box-shadow: 0 0 50px #ffd503;
 }
 
 .image {
