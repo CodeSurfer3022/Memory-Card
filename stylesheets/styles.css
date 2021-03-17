@@ -1,45 +1,89 @@
 body {
-    background: blueviolet;
-}
-
-#root {
-    background: coral;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 header {
-    background: azure;
+    padding: 20px;
+    position: relative;
+    background: yellow;
+    color: midnightblue;
 }
 
-main {
-    background: antiquewhite;
+.info {
+    margin-top: 20px;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.score p {
+    margin-top: 10px;
 }
 
 footer {
-    background: aquamarine;
+    height: 100px;
+    overflow: auto;
+    text-align: center;
+    background: yellow;
+    color: midnightblue;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+footer p {
+    margin-top: 20px;
 }
 
 /* style card */
+main {
+    overflow: auto;
+}
+
 .wrapper {
+    min-width: 800px;
+    margin: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 50px;
 }
 
 .card {
     height: 300px;
-    /*width: 300px;*/
+    background: white;
     text-align: center;
-    background: #8eecec;
+}
+
+.card:hover {
+    box-shadow: 0 0 50px #ffd503;
 }
 
 .image {
-    height: 90%;
+    height: 80%;
     /* add a gradient background*/
-    background: coral;
+    display: flex;
+    border: 5px solid midnightblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.image:hover {
+    cursor: pointer;
 }
 
 img {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.name {
+    height: 20%;
+    display: flex;
+    background: midnightblue;
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
 
